@@ -1,0 +1,16 @@
+.skills {
+  margin: var(--spacing-3) 0;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+}
+
+.cv-print .skills {
+  margin: 0 !important;
+}
+
+.cv-print .interests svg {
+  display: none !important;
+}
