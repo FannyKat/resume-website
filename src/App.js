@@ -11,7 +11,7 @@ import dataPortfolio from "./datas/Portfolio"
 function App() {
   const handleGenerateCv = () => {
     let cvTemplate = document.getElementById("cv-print")
-    cvTemplate.setAttribute("style", "width:210mm !important")
+    cvTemplate.setAttribute("style", "width:350mm !important")
     cvTemplate.classList.add("cv-print")
     setTimeout(() => {
       print("cv", "cv-print")
@@ -26,7 +26,7 @@ function App() {
       <div className="grid__container">
         <div className="sidebar">
           <div className="actions">
-            <a onClick={handleGenerateCv}><PictureAsPdfIcon /></a>
+            <button onClick={handleGenerateCv}><PictureAsPdfIcon /></button>
           </div>
           <User />
           <Skills />
