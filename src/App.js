@@ -6,6 +6,7 @@ import FormationsExperiences from "./components/FormationsExperiences"
 import { Preview, print } from "react-html2pdf";
 import PictureAsPdfIcon from "@mui/icons-material/PictureAsPdf";
 import Portfolio from "./components/Portfolio"
+import dataPortfolio from "./datas/Portfolio"
 
 function App() {
   const handleGenerateCv = () => {
@@ -18,13 +19,14 @@ function App() {
       cvTemplate.classList.remove("cv-print")
     }, 300)
   }
+
   return (
   <Preview id={"cv-print"} >
     <div className="App">     
       <div className="grid__container">
         <div className="sidebar">
           <div className="actions">
-            <button onClick={handleGenerateCv}><PictureAsPdfIcon /></button>
+            <a onClick={handleGenerateCv}><PictureAsPdfIcon /></a>
           </div>
           <User />
           <Skills />
@@ -32,7 +34,7 @@ function App() {
         <div className="main">
           <Profil />
           <FormationsExperiences />
-          <Portfolio />
+          <Portfolio datas={dataPortfolio}/>
         </div>
       </div>
     </div>

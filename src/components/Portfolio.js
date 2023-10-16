@@ -1,12 +1,19 @@
 import React from 'react'
-import { LinkPreview } from '@dhaiwat10/react-link-preview';
+import "./Portfolio.css"
 
-function Portfolio() {
+function Portfolio({ datas }) {
   return (
-    <div className="cursus mb3">
+    <div className="portfolio mb3">
       <h2 className="h2">Portfolio</h2>
-      <div className="portfolio">
-        <LinkPreview url='https://www.art-coma.fr/' width='400px' />
+      <div className="portfolio-links">
+        {datas.map((item) => (
+          <div key={item.id} className="portfolio-item">
+            <a href={item.url}>
+              <img src={item.image} alt={item.description} className="portfolio-image" />
+              <p>{item.description}</p>
+            </a>
+          </div>
+        ))}
       </div>
     </div>
   )
