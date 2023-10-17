@@ -1,6 +1,4 @@
 import React from 'react'
-import "./Skills.css"
-import Skill from "./Skill"
 import Interests from "./Interests"
 
 function Skills() {
@@ -8,24 +6,27 @@ function Skills() {
     <>
       <div className="skills">
           <h2 className="h2">Compétences</h2>
-            <Skill title="HTML" />
-            <Skill title="CSS" />
-            <Skill title="JAVASCRIPT" />
-            <Skill title="REACT" />
-            <Skill title="NODEJS" />
-            <Skill title="SQL" />
-            <Skill title="RUBY ON RAILS" />
-            <Skill title="PHP" />
-            <Skill title="C/C++" />
-            <Skill title="NGINX" />
-            <Skill title="GIT" />
-            <Skill title="LINUX" />
-            <Skill title="DOCKER" />
+          <div className="grid__row">
+            <p className="grid__item">HTML</p>
+            <p className="grid__item">CSS</p>
+            <p className="grid__item">JAVASCRIPT</p>
+            <p className="grid__item">REACT</p>
+            <p className="grid__item">NODEJS</p>
+            <p className="grid__item">SQL</p>
+            <p className="grid__item">RUBY ON RAILS</p>
+            <p className="grid__item">PHP</p>
+            <p className="grid__item">C/C++</p>
+            <p className="grid__item">NGINX</p>
+            <p className="grid__item">LINUX</p>
+            <p className="grid__item">DOCKER</p>
+          </div>
       </div>
       <div className="skills">
           <h2 className="h2">Langues</h2>
-            <Skill title="Anglais" />
-            <Skill title="Espagnol" />
+          <div className="grid__row">
+            <p className="grid__item">Anglais</p>
+            <p className="grid__item">Espagnol</p>
+          </div>
       </div>
       <Interests />
     </>

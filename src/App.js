@@ -1,32 +1,31 @@
 import './App.css'
+import html2canvas from "html2canvas";
+import jsPDF from "jspdf";
 import User from "./components/User"
 import Skills from "./components/Skills"
 import Profil from "./components/Profil"
 import FormationsExperiences from "./components/FormationsExperiences"
-import { Preview, print } from "react-html2pdf";
 import PictureAsPdfIcon from "@mui/icons-material/PictureAsPdf";
 import Portfolio from "./components/Portfolio"
 import dataPortfolio from "./datas/Portfolio"
 
 function App() {
-  const handleGenerateCv = () => {
-    let cvTemplate = document.getElementById("cv-print")
-    cvTemplate.setAttribute("style", "width:350mm !important")
-    cvTemplate.classList.add("cv-print")
-    setTimeout(() => {
-      print("cv", "cv-print")
-      cvTemplate.setAttribute("style", "width:100% !important")
-      cvTemplate.classList.remove("cv-print")
-    }, 300)
+  function handleGenerateCv() {
+    const contentRef = document.getElementById("cv");
+  
+    html2canvas(contentRef, { scale: 1 }).then((canvas) => {
+      const pdf = new jsPDF("p", "mm", "a4");
+      pdf.addImage(canvas.toDataURL("image/jpeg"), "JPEG", 0, 0, 255, 310);
+      pdf.save("fcatusse-cv.pdf");
+    });
   }
 
   return (
-  <Preview id={"cv-print"} >
     <div className="App">     
-      <div className="grid__container">
+      <div className="grid__container" id="cv">
         <div className="sidebar">
           <div className="actions">
-            <button onClick={handleGenerateCv}><PictureAsPdfIcon /></button>
+            <button onClick={ handleGenerateCv }><PictureAsPdfIcon /></button>
           </div>
           <User />
           <Skills />
@@ -38,7 +37,6 @@ function App() {
         </div>
       </div>
     </div>
-  </Preview>
   );
 }
 

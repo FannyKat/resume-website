@@ -17,7 +17,7 @@ function User() {
                 <PlaceIcon /> Paris</p>
             <p className="user__info">
                 <a href="tel:+33643432323">
-                    <PhoneIcon /> 0643432323
+                    <PhoneIcon /> 0143432323
                 </a>
             </p>
             <p className="user__info">
@@ -26,11 +26,11 @@ function User() {
                 </a>
             </p>
             <p className="user__info">
-                <CakeIcon /> 23 Fevrier 1996
+                <CakeIcon /> 27 ans
             </p>
             <p className="user__info">
                 <a href="https://github.com/FannyKat">
-                    <GitHubIcon /> https://github.com/FannyKat
+                    <GitHubIcon /> github.com/FannyKat
                 </a>
             </p>
         </div>

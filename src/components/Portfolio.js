@@ -1,17 +1,17 @@
 import React from 'react'
-import "./Portfolio.css"
+import "./cursus.css"
 
 function Portfolio({ datas }) {
   return (
-    <div className="portfolio mb3">
+    <div className="cursus mb3">
       <h2 className="h2">Portfolio</h2>
-      <div className="portfolio-links">
+      <div className="grid__row">
         {datas.map((item) => (
-          <div key={item.id} className="portfolio-item">
-            <a href={item.url}>
+          <div key={item.id} className="portfolio__item">
+            <a href={item.url} className="portfolio-links">
               <img src={item.image} alt={item.description} className="portfolio-image" />
-              <p>{item.description}</p>
             </a>
+            <p className="portfolio-title">{item.description}</p>
           </div>
         ))}
       </div>

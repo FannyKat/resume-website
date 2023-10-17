@@ -27,6 +27,7 @@
   --spacing-3: 1.2rem;
   --spacing-4: 1.5rem;
   --spacing-5: 2rem;
+  --spacing-10: 10rem;
 }
 
 body {
@@ -95,19 +96,30 @@ p {
   margin-top: var(--spacing-4);
 }
 
+@media (max-width: 767px) {
+  .grid__row {
+    grid-template-columns: 1fr;
+  }
+}
+
 .grid__mission {
   margin-top: var(--spacing-2);
+}
+
+.grid__column {
+  display: column;
 }
 
 /* layouts */
 
 .sidebar {
-  padding: 1.5rem;
+  padding: var(--spacing-4);
   background-color: var(--side-bar-bg-color);
 }
 
 .main {
-  padding: 1.5rem;
+  padding: var(--spacing-4);
+  margin: var(--spacing-4)
 }
 
 /* Generate PDF */
@@ -116,69 +128,9 @@ p {
   cursor: pointer;
 }
 
-#cv-print {
-  width: 100% !important;
-}
-
-.cv-print ul {
-  margin: 0;
-  padding: 0;
-}
-
-.cv-print ul li {
-  list-style-type: none;
-}
-
-.cv-print ul li:before {
-  content: ".";
-  display: inline-block;
-  font-size: 110%;
-  padding-right: 10px;
-}
-
-.cv-print .main {
-  max-width: 600px !important;
-}
-
-.cv-print .grid__container {
-  font-size: 12px !important;
-  max-width: 350mm !important;
-}
-
-.cv-print .grid__title {
-  font-size: 14px !important;
-}
-
-.cv-print .grid__row {
-  margin-top: var(--spacing-2) !important;
-}
-
-.cv-print .grid__mission {
-  margin-top: var(--spacing-1) !important;
-}
-
-.cv-print h2 {
-  font-size: 16px !important;
-  margin-bottom: var(--spacing-2) !important;
-}
-
-.cv-print h1 {
-  font-size: 17px !important;
-}
-
-.cv-print .sidebar {
-  height: 297mm;
-}
-
-.cv-print .user__infos svg {
-  display: none !important;
-}
-
-.cv-print .grid__date {
-  margin-top: 5px;
-  margin-right: var(--spacing-1);
-}
-
-.cv-print .actions {
-  display: none;
+/* Skills */
+.skills {
+  margin: var(--spacing-3) 0;
+  margin-bottom: var(--spacing-5);
+  margin-top: var(--spacing-5);
 }

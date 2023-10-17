@@ -18,7 +18,7 @@ export const dataExperiences = [
   },
   {
     id: 1,
-    title: "Stagiaire Développeuse Web - Fullstack",
+    title: "Développeuse Web - Fullstack",
     date: "juillet 2020 - Décembre 2020",
     location: "Paris 12ème",
     text: "Banque Nationale de Données Maladies Rares (Hôpitaux de Paris)",
@@ -35,6 +35,10 @@ export const dataExperiences = [
         id: 3,
         title: "Evolution du Front-End Angular JS => React JS",
       },
+      {
+        id: 4,
+        title: "Back-end Ruby On Rails / Java"
+      }
     ]
   },
   {
@@ -67,6 +71,10 @@ export const dataExperiences = [
     missions: [
       {
         id: 0,
+        title: "Marketing des baies de disques EMC",
+      },
+      {
+        id: 1,
         title: "Réalisation de carte d'invitations pour les évènements",
       },
       {
