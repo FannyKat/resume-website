@@ -123,6 +123,10 @@ p {
   .actions {
     display: none;
   }
+
+  .main {
+    padding: 0 !important;
+  }
 }
 
 .grid__mission {

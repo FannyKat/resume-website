@@ -17,6 +17,7 @@ function Portfolio({ datas }) {
             </a>
             <p className="portfolio-title">{item.description}</p>
             <p className="portfolio-text">{item.text}</p>
+            <p className="portfolio-text">{item.text_url}</p>
           </div>
         ))}
       </div>
