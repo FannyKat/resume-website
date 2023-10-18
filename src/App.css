@@ -12,7 +12,7 @@
   --side-bar-bg-color: #f4f4f4;
   --text-color: #333333;
   --title-color: #111111;
-  --date-color: #84b;
+  --date-color: rgb(108, 53, 150);
 
   /* fonts */
   --body-font: "Poppins", "Sans-serif";
@@ -66,6 +66,11 @@ a {
   color: inherit;
 }
 
+.user__infos a:hover {
+  color: var(--date-color);
+  opacity: 0.4;
+}
+
 p {
   margin-bottom: var(--spacing-2);
 }
@@ -78,6 +83,7 @@ p {
 
 .mb5 {
   margin-bottom: var(--spacing-5);
+  padding: var(--spacing-5);
 }
 
 /* grids */
@@ -100,6 +106,23 @@ p {
   .grid__row {
     grid-template-columns: 1fr;
   }
+
+  ul li {
+    display: none;
+  }
+
+  .portfolio {
+    display: column;
+  }
+
+  .portfolio-image {
+    width: 50vw !important;
+    height: 30vh !important;
+  }
+
+  .actions {
+    display: none;
+  }
 }
 
 .grid__mission {
@@ -113,24 +136,31 @@ p {
 /* layouts */
 
 .sidebar {
-  padding: var(--spacing-4);
+  padding: var(--spacing-5);
   background-color: var(--side-bar-bg-color);
 }
 
 .main {
   padding: var(--spacing-4);
-  margin: var(--spacing-4)
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  padding: var(--spacing-2);
+  background-color: var(--side-bar-bg-color);
+}
+
+.footer-text {
+  flex: 1;
+}
+
+.footer-copyright {
+  flex: flex-end;
 }
 
 /* Generate PDF */
 .actions button {
   border: none;
   cursor: pointer;
-}
-
-/* Skills */
-.skills {
-  margin: var(--spacing-3) 0;
-  margin-bottom: var(--spacing-5);
-  margin-top: var(--spacing-5);
 }

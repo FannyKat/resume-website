@@ -8,6 +8,7 @@ import FormationsExperiences from "./components/FormationsExperiences"
 import PictureAsPdfIcon from "@mui/icons-material/PictureAsPdf";
 import Portfolio from "./components/Portfolio"
 import dataPortfolio from "./datas/Portfolio"
+import Footer from "./components/Footer"
 
 function App() {
   function handleGenerateCv() {
@@ -36,6 +37,7 @@ function App() {
           <Portfolio datas={dataPortfolio}/>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

@@ -1,13 +1,12 @@
+/* Grids */
+
 .grid__item,
 .grid__item p {
   margin-bottom: var(--spacing-2);
-  margin-right: var(--spacing-2);
-  border: 2px;
 }
 
 .grid__date {
   font-weight: 500;
-  color: var(--date-color);
 }
 
 .grid__title {
@@ -16,7 +15,7 @@
 
 .grid__location {
   font-weight: 300;
-  color: var(--text-color);
+  color: var(--date-color);
 }
 
 .grid__mission {
@@ -25,45 +24,29 @@
 
 .cursus {
   background-color: var(--side-bar-bg-color);
-  padding: var(--spacing-2);
+  padding: var(--spacing-5);
   border-radius: 3%;
+}
+
+/* Portfolio */
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: var(--spacing-4);
 }
 
 .portfolio__item {
   text-align: center;
+  flex: 1;
 }
 
 .portfolio-image {
   width: 350px;
   height: 250px;
-  border-radius: 20%;
+  border-radius: 10%;
+  opacity: 0.8;
 }
 
-@media (max-width: 767px) {
-  .cursus {
-    margin: 0;
-    border-radius: 0;
-  }
-  
-  .main {
-    text-align: center;
-    padding: 0;
-  }
-
-  h2 {
-    text-align: center;
-    display: grid;
-  }
-
-  ul li {
-    display: none;
-  }
-
-  .sidebar {
-    text-align: center;
-  }
-
-  .actions {
-    display: none;
-  }
+a:hover .portfolio-image {
+  opacity: 1;
 }

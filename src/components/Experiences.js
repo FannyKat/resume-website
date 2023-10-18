@@ -1,9 +1,13 @@
-import React from 'react'
+import React from 'react';
+import WorkIcon from '@mui/icons-material/Work';
 
 function Experiences({ datas }) {
   return (
     <div className="cursus mb3">
-      <h2 className="h2">Expériences professionnelles</h2>
+      <h2 className="h2">
+        <WorkIcon className="icon" />
+        Expériences professionnelles
+      </h2>
       {datas.map(item => (
         <div className="grid__row" key={item.id}>
           <div className="grid__item">

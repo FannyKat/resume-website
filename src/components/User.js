@@ -5,6 +5,7 @@ import MailIcon from '@mui/icons-material/Mail';
 import CakeIcon from '@mui/icons-material/Cake';
 import PlaceIcon from '@mui/icons-material/Place';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 function User() {
   return (
@@ -14,25 +15,23 @@ function User() {
         <p className="user__profession">Développeuse Web</p>
         <div className="user__infos">
             <p className="user__info">
-                <PlaceIcon /> Paris</p>
-            <p className="user__info">
-                <a href="tel:+33643432323">
-                    <PhoneIcon /> 0143432323
-                </a>
+                <PlaceIcon /> Paris
             </p>
-            <p className="user__info">
-                <a href="mailto:fannykatusse@gmail.com">
-                    <MailIcon /> fannykatusse@gmail.com
-                </a>
-            </p>
+            <a href="tel:+33643432323" className="user__info">
+                <PhoneIcon /> 0143432323
+            </a>
+            <a href="mailto:fannykatusse@gmail.com" className="user__info">
+                <MailIcon /> fannykatusse@gmail.com
+            </a>
             <p className="user__info">
                 <CakeIcon /> 27 ans
             </p>
-            <p className="user__info">
-                <a href="https://github.com/FannyKat">
-                    <GitHubIcon /> github.com/FannyKat
-                </a>
-            </p>
+            <a href="https://github.com/FannyKat" className="user__info">
+                <GitHubIcon /> github.com/FannyKat
+            </a>
+            <a href="https://www.linkedin.com/in/fanny-catusse-2111081a8/" className="user__info">
+                <LinkedInIcon /> Linkedin
+            </a>
         </div>
     </div>
   )

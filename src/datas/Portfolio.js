@@ -4,12 +4,13 @@ const dataPortfolio = [
     url: 'http://www.art-coma.fr',
     image: "./images/coma-img.jpg",
     description: 'Art Website in Ruby on Rails',
+    text: "DB: PostreSQL, Front-end: Bootstrap"
   },
   {
     id: 2,
     url: "https://github.com/FannyKat/",
     image: "./images/github-page.png",
-    description: "C Projects on Github",
+    description: "Projects on Github",
   }
 ]
 
