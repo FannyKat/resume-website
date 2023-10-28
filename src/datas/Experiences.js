@@ -1,26 +1,26 @@
 export const dataExperiences = [
   {
     id: 0,
-    title: "Animatrice Polyvalente en structure scolaire",
+    title: "Animatrice Polyvalente en école",
     date: "Février 2022 - Aôut 2023",
-    location: "Ecole élementaire et maternelle Paris 10ème",
+    location: "Ecole élementaire et maternelle Paris",
     text: "Poste d'accompagnant Éducatif et Social : Accompagner le handicap en milieu scolaire",
     missions: [
       {
         id: 0,
-        title: "Mise en œuvre du projet pédagogique avec l'équipe",
+        title: "Mise en œuvre du projet pédagogique pendant l'année scolaire avec l'équipe.",
       },
       {
         id: 1,
-        title: "Planifier des animations et ateliers adaptés aux enfants",
+        title: "Planifier des animations adaptés aux enfants.",
       },
     ]
   },
   {
     id: 1,
     title: "Développeuse Web - Fullstack",
-    date: "juillet 2020 - Décembre 2020",
-    location: "Hôpitaux de Paris (AP-HP) Campus Picpus Paris 12ème",
+    date: "juillet 2020 - Janvier 2021",
+    location: "Hôpitaux de Paris (AP-HP) Campus Picpus Paris",
     text: "Banque Nationale de Données Maladies Rares",
     missions: [
       {
@@ -43,10 +43,10 @@ export const dataExperiences = [
   },
   {
     id: 2,
-    title: "Equipière polyvalente en restauration rapide",
+    title: "Equipière polyvalente en restauration",
     date: "Septembre 2014 - Août 2017",
-    location: "Paris 10ème",
-    text: "Accueil de la clientèle, service à table, gestion de la caisse",
+    location: "Paris",
+    text: "Accueil de la clientèle, service à table, gestion de la caisse, cuisine et pâtisserie",
     missions: [
       {
         id: 0,
@@ -66,7 +66,7 @@ export const dataExperiences = [
     id: 3,
     title: "Stagiaire en Marketing",
     date: "Mai 2009",
-    location: "Porte de Saint-Cloud, Paris 16ème",
+    location: "Porte de Saint-Cloud, Paris ",
     text: "APX est une SSII spécialisée dans le conseil, l'intégration et l'infogérance.",
     missions: [
       {
@@ -79,10 +79,6 @@ export const dataExperiences = [
       },
       {
         id: 2,
-        title: "Etudes de maquettes",
-      },
-      {
-        id: 3,
         title: "Maîtrise du logiciel Excel",
       },
     ]

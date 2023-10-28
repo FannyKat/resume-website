@@ -1,99 +1,38 @@
-import React from 'react'
-import Interests from "./Interests"
-import LanguageIcon from '@mui/icons-material/Language';
+import { skills } from "../datas/Skills"
 import TerminalIcon from '@mui/icons-material/Terminal';
 
-function Skills() {
+const Skill = ({ id, name, language, icon }) => {
   return (
-    <>
-      <div className="skills">
-        <h2 className="h2">
-          <TerminalIcon className="icon" />
-          Compétences
-        </h2>
-        <div className="dev-skills">
-          <p className="skill">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" className="skill-image"/>
-            HTML
-          </p>
+  <div className="bg-[#D8BFD8] rounded-md p-6 w-full w-2/3 shadow-lg h-full">
+    <h3 className="font-bold text-lg mb-4 text-[#4B0082]">{name}</h3>
+    <ul className="flex flex-wrap">
+      {language.map((skill, index) => (
+        <li key={index} className="flex items-center mb-2 w-1/2">
+          {icon[index] && (
+            <img src={icon[index]} alt={skill} className="mr-2 h-8 w-8" />
+          )}
+          {skill}
+        </li>
+      ))}
+    </ul>
+  </div>
+  )
+};
 
-          <p className="skill">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" className="skill-image"/>
-            CSS
-          </p>
-          <p className="skill">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg" className="skill-image"/>
-            PHP
-          </p>
-          <p className="skill">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" className="skill-image"/>
-            DOCKER
-          </p>
-          <p className="skill">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" className="skill-image"/>
-            Javascript
-          </p>
-          <p className="skill">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" className="skill-image"/>
-            GIT
-          </p>
-          <p className="skill">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" className="skill-image"/>
-            React
-          </p>
-          <p className="skill">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" className="skill-image"/>
-            Node.js
-          </p>
-          <p className="skill">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" className="skill-image"/>
-            C/C++
-          </p>
-          <p className="skill">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" className="skill-image"/>
-            NGINX
-          </p>
-          <p className="skill">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" className="skill-image"/>
-            LINUX
-          </p>
-          <p className="skill">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg" className="skill-image"/>
-            macOS
-          </p>
- 
-          <p className="skill">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" className="skill-image"/>
-            Windows
-          </p>
-
-          <p className="skill">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" className="skill-image"/>
-            mySQL
-          </p>
-          <p className="skill">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" className="skill-image"/>
-            PostgresSQL
-          </p>
-          <p className="skill">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg" className="skill-image"/>
-            Ruby On Rails
-          </p>
-        </div>   
-      </div>
-      <div className="skills">
-          <h2 className="h2">
-            <LanguageIcon className="icon" />
-            Langues
-          </h2>
-          <div className="grid__row">
-            <p className="language">Anglais</p>
-            <p className="language">Espagnol</p>
-          </div>
-      </div>
-      <Interests />
-    </>
+export default function Skills () {
+  return (
+    <div className="lg:mt-40 pb-10 mb-20">
+      <h2 className="text-white font-bold text-4xl mb-20">
+        <TerminalIcon className="mr-3" />
+        Skills
+      </h2>
+      <ul className="grid grid-flow-row lg:grid-cols-4 py-8 gap-8 mt-10">
+        {skills.map((skill, index) => (
+          <li key={skill.id} className="h-full">
+            <Skill key={skill.id} index={index} {...skill} />
+          </li>
+        ))}
+      </ul>
+    </div>
   )
 }
-
-export default Skills

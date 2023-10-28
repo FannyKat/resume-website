@@ -1,36 +1,26 @@
 import React from 'react'
-import ComputerIcon from '@mui/icons-material/Computer';
-import CheckroomIcon from '@mui/icons-material/Checkroom';
-import MusicNoteIcon from '@mui/icons-material/MusicNote';
-import HikingIcon from '@mui/icons-material/Hiking';
-import PetsIcon from '@mui/icons-material/Pets';
-import HandymanIcon from '@mui/icons-material/Handyman';
 import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
 
 
-function interests() {
+function interests({ datas }) {
   return (
-    <div className="skills">
-      <h2 className="h2">
-        <SportsEsportsIcon className="icon" />
-        Centres d'intérêts
+    <div className="lg:mt-40 pb-10 mb-20">
+      <h2 className="text-white font-bold text-4xl mb-20">
+        <SportsEsportsIcon className="mr-3" />
+        Interests
       </h2>
-      <div className="grid__column">
-        <p className="user__info"><ComputerIcon /> Informatique</p>
-        <p>Programmation d'un Shell UNIX interactif (langage C),
-        Installation d'un système Archlinux</p>
-        <p className="user__info"><CheckroomIcon /> Couture</p>
-        <p>Création de vêtements, bénévolat dans des ateliers couture pour des centres sociaux</p>
-        <p className="user__info"><MusicNoteIcon /> Musique</p>
-        <p>6 ans de conservatoire, Danse classique, Guitare, Solfège, Chant</p>
-        <p className="user__info"><HikingIcon /> Randonnée</p>
-        <p>Voyages et découvertes de sites</p>
-        <p className="user__info"><PetsIcon /> Animaux</p>
-        <p>Woofing dans un refuge de 150 animaux domestiques et sauvages</p>
-        <p className="user__info"><HandymanIcon /> Bricolage</p>
-        <p>Fabrication de meubles et rénnovation d'appartements</p>
-      </div>
+      <ul className="grid grid-flow-row lg:grid-cols-4 py-8 gap-8 mt-10">
+        {datas.map(( interest, index ) => (
+            <li key={index}>
+              <div className="bg-[#D8BFD8] rounded-md p-6 w-full w-2/3 shadow-lg h-full">
+                <h3 className="font-bold text-lg mb-4 text-[#4B0082]">{interest.title}</h3>
+                <div className="text-sm text-[#4B0082]">{interest.text}</div>
+              </div>
+            </li>
+          ))}
+      </ul>
     </div>
+    
   )
 }
 

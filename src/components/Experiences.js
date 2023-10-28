@@ -1,32 +1,36 @@
 import React from 'react';
 import WorkIcon from '@mui/icons-material/Work';
 
-function Experiences({ datas }) {
+const Experience = ({ id, date, location, title, text, missions }) => {
   return (
-    <div className="cursus mb3">
-      <h2 className="h2">
-        <WorkIcon className="icon" />
-        Expériences professionnelles
-      </h2>
-      {datas.map(item => (
-        <div className="grid__row" key={item.id}>
-          <div className="grid__item">
-            <p className="grid__date" >{item.date}</p>
-            <p className="grid__location">{item.location}</p>
-          </div>
-          <div className="grid__item">
-            <h3 className="grid__title">{item.title}</h3>
-            <p className="grid__text">{item.text}</p>
-            <ul className="grid__missions">
-              {item.missions.map(mission => (
-                <li className="grid_mission" key={mission.id}>{mission.title}</li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      ))}
+    <div className="bg-[#D8BFD8] rounded-md p-6 w-full w-2/3 shadow-lg h-full">
+      <h3 className="font-bold text-lg mb-4 text-[#4B0082]">{title}</h3>
+      <div className="text-sm text-[#4B0082]">{date}</div>
+      <div className="text-sm text-[#4B0082]">{location}</div>
+      <div className="mt-4">{text}</div>
+      <ul className="mt-5">
+        {missions.map(mission => (
+          <li className="" key={mission.id}>{mission.title}</li>
+        ))}
+      </ul>
     </div>
   )
 }
 
-export default Experiences
+export default function Experiences ({ datas }) {
+  return (
+    <div className="lg:mt-40 pb-10 mb-20">
+      <h2 className="text-white font-bold text-4xl mb-20">
+        <WorkIcon className="mr-3" />
+        Experiences
+      </h2>
+      <ul className="grid grid-flow-row lg:grid-cols-4 py-8 gap-8 mt-10">
+        {datas.map(( experience, index ) => (
+          <li>
+            <Experience index={index} {...experience} />
+          </li>
+        ))}
+      </ul>
+    </div>
+  )
+} 

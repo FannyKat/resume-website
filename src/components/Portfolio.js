@@ -1,26 +1,30 @@
 import React from 'react'
-import "./cursus.css"
 import CodeIcon from '@mui/icons-material/Code';
 
 function Portfolio({ datas }) {
   return (
-    <div className="cursus mb3">
-      <h2 className="h2">
-        <CodeIcon className="icon" />
+    <div className="lg:mt-40 pb-10 mb-20">
+      <h2 className="text-white font-bold text-4xl mb-20">
+        <CodeIcon className="mr-3" />
         Portfolio
       </h2>
-      <div className="portfolio">
-        {datas.map((item) => (
-          <div key={item.id} className="portfolio__item">
-            <a href={item.url} className="portfolio-links">
-              <img src={item.image} alt={item.description} className="portfolio-image" />
-            </a>
-            <p className="portfolio-title">{item.description}</p>
-            <p className="portfolio-text">{item.text}</p>
-            <p className="portfolio-text">{item.text_url}</p>
-          </div>
+      <ul className="grid grid-flow-row lg:grid-cols-4 py-8 gap-8 mt-10">
+        {datas.map(( item, index ) => (
+          <li>
+            <div className="bg-[#D8BFD8] rounded-md w-full w-2/3 shadow-lg h-full">
+              <a href={item.url} className="">
+                <img src={item.image} alt={item.description} className="w-full rounded-t-md" />
+              </a>
+              <div className="md:text-left p-3 rounded-b-md font-bold text-lg text-[#4B0082] text-center">{item.description}</div>
+              <div className="flex flex-row m-5">
+                {item.icon.map((tech, index) => (
+                  <img key={index} src={tech} className="mr-2 h-8 w-8" />
+                ))}
+              </div>
+            </div>
+          </li>
         ))}
-      </div>
+      </ul>
     </div>
   )
 }
