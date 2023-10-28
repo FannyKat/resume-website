@@ -26,7 +26,7 @@ export default function Experiences ({ datas }) {
       </h2>
       <ul className="grid grid-flow-row lg:grid-cols-4 py-8 gap-8 mt-10">
         {datas.map(( experience, index ) => (
-          <li>
+          <li key={index}>
             <Experience index={index} {...experience} />
           </li>
         ))}

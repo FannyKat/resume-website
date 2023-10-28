@@ -10,7 +10,7 @@ function Portfolio({ datas }) {
       </h2>
       <ul className="grid grid-flow-row lg:grid-cols-4 py-8 gap-8 mt-10">
         {datas.map(( item, index ) => (
-          <li>
+          <li key={index}>
             <div className="bg-[#D8BFD8] rounded-md w-full w-2/3 shadow-lg h-full">
               <a href={item.url} className="">
                 <img src={item.image} alt={item.description} className="w-full rounded-t-md" />
