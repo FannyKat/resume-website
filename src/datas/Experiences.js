@@ -33,7 +33,7 @@ export const dataExperiences = [
       },
       {
         id: 3,
-        title: "Evolution du Front-End Angular JS => React JS",
+        title: "Evolution du Front-End Angular JS => React",
       },
       {
         id: 4,

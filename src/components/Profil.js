@@ -1,4 +1,4 @@
-import cv from "../assets/fcatusse-cv.pdf";
+import cv from "../assets/fannycatusse-cv.pdf";
 import picture from "../assets/cvpic.JPG";
 
 export default function Profil() {
@@ -21,7 +21,7 @@ export default function Profil() {
             </p>
             <div className="flex flex-row mt-5">
               <a
-                href="https://www.linkedin.com/in/fanny-catusse-2111081a8/"
+                href="https://www.linkedin.com/in/fannycatusse/"
                 target="_blank"
                 className="text-[#CAD7D8] hover:text-[#FF6F61] mr-4"
               >

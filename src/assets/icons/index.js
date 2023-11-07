@@ -25,6 +25,7 @@ import tailwindcss from "./tailwindcss.svg";
 import windows8 from "./windows8.svg";
 import spain from "./spain.svg";
 import uk from "./uk.svg";
+import phpmyadmin from "./phpmyadmin.svg";
 
 export {
   amazonwebservices,
@@ -54,4 +55,5 @@ export {
   windows8,
   spain,
   uk,
+  phpmyadmin,
 };

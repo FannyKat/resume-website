@@ -9,7 +9,7 @@ const dataFormations = [
   {
     id: 1,
     title: "Ecole 42 Paris - Formation Architecte de programmation",
-    date: "Septembre 2018 - 2021",
+    date: "Septembre 2018 - 2022",
     location: "Paris 17ème",
     text: "Pédagogie par projets, apprentissage de langages bas niveaux et hauts niveaux"
   },

@@ -25,7 +25,8 @@ import {
   tailwindcss,
   windows8,
   spain,
-  uk
+  uk,
+  phpmyadmin,
 } from "../assets/icons/";
 
 export const skills = [
@@ -44,19 +45,19 @@ export const skills = [
   {
     id: "db",
     name: "Databases",
-    language: ["PostgreSQL", "MongoDB", "MySQL"],
-		icon: [postgresql, mongodb, mysqL],
+    language: ["PostgreSQL", "MongoDB", "MySQL", "phpMyAdmin"],
+		icon: [postgresql, mongodb, mysqL, phpmyadmin],
   },
   {
     id: "system",
-    name: "System",
+    name: "Systems",
     language: ["Linux", "MacOS", "Windows"],
 		icon: [linux, apple, windows8]
   },
   {
 		id: "others",
 		name: "Others",
-		language: ["Git", "Bash", "Docker", "Nginx", "AWS"],
+		language: ["Git", "Shell / Bash", "Docker", "Nginx", "AWS"],
 	  icon: [git, bash, docker, nginx, amazonwebservices],
 	},
   {
