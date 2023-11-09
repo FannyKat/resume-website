@@ -26,6 +26,12 @@ import windows8 from "./windows8.svg";
 import spain from "./spain.svg";
 import uk from "./uk.svg";
 import phpmyadmin from "./phpmyadmin.svg";
+import code from "./code.svg";
+import hiking from "./hiking.svg";
+import pets from "./pets.svg";
+import diy from "./diy.svg";
+import music from "./music.svg";
+import sewing from "./sewing.svg";
 
 export {
   amazonwebservices,
@@ -56,4 +62,10 @@ export {
   spain,
   uk,
   phpmyadmin,
+  diy,
+  pets,
+  code,
+  sewing,
+  music,
+  hiking,
 };

@@ -2,7 +2,7 @@ import React from 'react'
 import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
 
 
-function interests({ datas }) {
+function interests({ datas, icon }) {
   return (
     <div className="lg:mt-40 pb-10 mb-20">
       <h2 className="text-white font-bold text-4xl mb-20">
@@ -13,7 +13,10 @@ function interests({ datas }) {
         {datas.map(( interest, index ) => (
             <li key={index}>
               <div className="bg-[#D8BFD8] rounded-md p-6 w-full w-2/3 shadow-lg h-full">
-                <h3 className="font-bold text-lg mb-4 text-[#4B0082]">{interest.title}</h3>
+                <h3 className="font-bold text-lg mb-4 text-[#4B0082] flex items-center mb-2 w-1/2">
+                {<img src={interest.icon} alt={interest} className="mr-2 h-8 w-8" />}
+                {interest.title}
+                </h3>
                 <div className="text-sm text-[#4B0082]">{interest.text}</div>
               </div>
             </li>
