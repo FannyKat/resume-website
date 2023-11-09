@@ -4,7 +4,7 @@ import picture from "../assets/cvpic.JPG";
 export default function Profil() {
   return (
     <div className="flex justify-center items-center p-20">
-      <div className="md:pr-40 md:text-left lg:w-1/2 md:w-2/3">
+      <div className="md:pr-40 md:text-left lg:w-1/2 md:w-4/3">
         <div className="flex flex-wrap justify-center">
           <img src={picture} className="w-42 h-48 rounded-full mr-6 mt-6"/>
           <h1 className="text-left lg:text-md text-sm m-5 tracking-wider">

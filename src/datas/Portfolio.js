@@ -32,7 +32,7 @@ const dataPortfolio = [
   },
   {
     id: 3,
-    url: "https://fannycatusse.online",
+    url: "http://fannycatusse.online",
     image: "./website.png",
     description: "My Personal Website",
     icon: [react, tailwindcss, nodejs, javascript]
