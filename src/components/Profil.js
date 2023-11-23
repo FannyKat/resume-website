@@ -1,4 +1,4 @@
-import cv from "../assets/fannycatusse-cv.pdf";
+import cv from "../assets/fcatusse-cv.pdf";
 import picture from "../assets/cvpic.JPG";
 
 export default function Profil() {
