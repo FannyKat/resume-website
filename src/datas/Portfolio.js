@@ -12,10 +12,20 @@ import {
   tailwindcss,
   bash,
   php,
-  docker
+  docker,
+  html5,
+  wix,
+  materialize
 } from "../assets/icons/";
 
 const dataPortfolio = [
+  {
+    id: 0,
+    url: 'http://www.ledonenligne.fr',
+    image: "./ldl.png",
+    description: "Online Donations Website",
+    icon: [ruby, rails, materialize, javascript, postgresql]
+  },
   {
     id: 1,
     url: 'http://www.art-coma.fr',
@@ -25,18 +35,25 @@ const dataPortfolio = [
   },
   {
     id: 2,
+    url: "https://www.yt-motors.com/",
+    image: "./yt-motors.png",
+    description: "Online Car Sale Platform",
+    icon: [wix, html5, javascript]
+  },
+  {
+    id: 3,
     url: "https://github.com/FannyKat/",
     image: "./github-site.png",
     description: "Projects on Github",
     icon: [c, bash, php, docker]
   },
-  {
-    id: 3,
-    url: "http://fannycatusse.online",
-    image: "./website.png",
-    description: "My Personal Website",
-    icon: [react, tailwindcss, nodejs, javascript]
-  }
+  // {
+  //   id: 4,
+  //   url: "http://fannycatusse.online",
+  //   image: "./website.png",
+  //   description: "My Personal Website",
+  //   icon: [react, tailwindcss, nodejs, javascript]
+  // },
 ]
 
 export default dataPortfolio

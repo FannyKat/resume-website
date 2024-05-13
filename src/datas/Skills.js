@@ -27,6 +27,12 @@ import {
   spain,
   uk,
   phpmyadmin,
+  wix,
+  materialize,
+  archlinux,
+  ubuntu,
+  debian,
+  fr
 } from "../assets/icons/";
 
 export const skills = [
@@ -39,8 +45,8 @@ export const skills = [
 	{
 		id: "lib",
 		name: "Frameworks and Libraries",
-		language: ["React", "TailwindCSS", "Node", "Ruby On Rails", "Bootstrap", "jquery"],
-		icon: [react, tailwindcss, nodejs, rails, bootstrap, jquery],
+		language: ["React", "TailwindCSS", "NodeJS", "Ruby On Rails", "Bootstrap", "jQuery", "MUI", "MaterializeCSS"],
+		icon: [react, tailwindcss, nodejs, rails, bootstrap, jquery, materialui, materialize],
 	},
   {
     id: "db",
@@ -50,20 +56,20 @@ export const skills = [
   },
   {
     id: "system",
-    name: "Systems",
-    language: ["Linux", "MacOS", "Windows"],
-		icon: [linux, apple, windows8]
+    name: "Systems & Distributions",
+    language: ["ArchLinux", "Linux", "Ubuntu", "Debian", "MacOS", "Windows"],
+		icon: [archlinux, linux, ubuntu, debian, apple, windows8]
   },
   {
 		id: "others",
 		name: "Others",
-		language: ["Git", "Shell / Bash", "Docker", "Nginx", "AWS"],
-	  icon: [git, bash, docker, nginx, amazonwebservices],
+		language: ["Git", "Shell / Bash", "Docker", "Nginx", "AWS", "WiX"],
+	  icon: [git, bash, docker, nginx, amazonwebservices, wix],
 	},
   {
     id: "languages",
     name: "Languages",
-    language: ["Anglais", "Espagnol"],
-    icon: [uk, spain]
+    language: ["Français", "Anglais", "Espagnol"],
+    icon: [fr, uk, spain]
   }
 ];

@@ -5,6 +5,7 @@ import {
   pets,
   hiking,
   diy,
+  writing
 } from "../assets/icons";
 
 const interests = [
@@ -43,6 +44,12 @@ const interests = [
     title: "Bricolage",
     text: "Fabrication de meubles et rénovation d'appartements.",
     icon: diy
+  },
+  {
+    id: 7,
+    title: "Ecriture",
+    text: "Rédaction de récits littéraires en collaboration avec un écrivain.",
+    icon: writing
   }
 ]
 

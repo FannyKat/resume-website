@@ -7,10 +7,10 @@ const Experience = ({ id, date, location, title, text, missions }) => {
       <h3 className="font-bold text-lg mb-4 text-[#4B0082]">{title}</h3>
       <div className="text-sm text-[#4B0082]">{date}</div>
       <div className="text-sm text-[#4B0082]">{location}</div>
-      <div className="mt-4">{text}</div>
+      <div className="font-bold mt-4 text-[#4B0082]">{text}</div>
       <ul className="mt-5">
         {missions.map(mission => (
-          <li className="" key={mission.id}>{mission.title}</li>
+          <li className="mt-3 ml-3 list-disc" key={mission.id}>{mission.title}</li>
         ))}
       </ul>
     </div>

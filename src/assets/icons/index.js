@@ -32,6 +32,13 @@ import pets from "./pets.svg";
 import diy from "./diy.svg";
 import music from "./music.svg";
 import sewing from "./sewing.svg";
+import wix from "./wix.svg";
+import materialize from "./materializecss.svg"
+import archlinux from "./archlinux.svg"
+import ubuntu from "./ubuntu.svg"
+import debian from "./debian.svg"
+import writing from "./writing.svg"
+import fr from "./fr.svg"
 
 export {
   amazonwebservices,
@@ -68,4 +75,11 @@ export {
   sewing,
   music,
   hiking,
+  wix,
+  materialize,
+  archlinux,
+  ubuntu,
+  debian,
+  writing,
+  fr
 };

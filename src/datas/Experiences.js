@@ -1,6 +1,40 @@
 export const dataExperiences = [
   {
     id: 0,
+    title: "Développeuse  Web - Fullstack",
+    date: "Janvier 2024 - Mai 2024",
+    location: "Ledonenligne - Paris",
+    text: "Mise à jour d'un site web RubyOnRails",
+    missions: [
+      {
+        id: 0,
+        title: "Mise à niveau d'un site Ruby on Rails de la version Ruby 2.3 à 3.3 et de Rails 4 à 7, assurant ainsi la compatibilité avec les dernières technologies.",
+      },
+      {
+        id: 1,
+        title: "Assuré la maintenance continue du site, comprenant la correction des bugs et l'ajout de nouvelles fonctionnalités pour améliorer l'expérience utilisateur et répondre aux besoins évolutifs de l'entreprise.",
+      },
+    ]
+  },
+  {
+    id: 1,
+    title: "Développeuse CMS - Plateforme WiX",
+    date: "Septembre 2023 - Janvier 2024",
+    location: "YT-motors - La Garde / Paris",
+    text: "Création d'une plateforme WiX pour une entreprise de vente de voitures d'occasion",
+    missions: [
+      {
+        id: 0,
+        title: "Développement d'un script Ruby avec Selenium et Nokogiri pour extraire et stocker les annonces Leboncoin, désactivation des indicateurs d'automatisation pour éviter la détection de bot, puis mise à jour régulière d'un site WiX via CRON sur un serveur Ubuntu.",
+      },
+      {
+        id: 1,
+        title: "Utilisation de l'API Velo de Wix pour développer des modules permettant l'affichage d'images.",
+      },
+    ]
+  },
+  {
+    id: 2,
     title: "Animatrice Polyvalente en école",
     date: "Février 2022 - Aôut 2023",
     location: "Ecole élementaire et maternelle Paris",
@@ -14,14 +48,22 @@ export const dataExperiences = [
         id: 1,
         title: "Planifier des animations adaptés aux enfants.",
       },
+      {
+        id: 2,
+        title: "Accompagnement d'un enfant atteint d'un handicap moteur.",
+      },
+      {
+        id: 3,
+        title: "Encadrement de classes maternelles et primaires.",
+      },
     ]
   },
   {
-    id: 1,
+    id: 3,
     title: "Développeuse Web - Fullstack",
     date: "juillet 2020 - Janvier 2021",
     location: "Hôpitaux de Paris (AP-HP) Campus Picpus Paris",
-    text: "Banque Nationale de Données Maladies Rares",
+    text: "Banque Nationale de Données des Maladies Rares - Application BaMaRa",
     missions: [
       {
         id: 0,
@@ -42,7 +84,7 @@ export const dataExperiences = [
     ]
   },
   {
-    id: 2,
+    id: 4,
     title: "Equipière polyvalente en restauration",
     date: "Septembre 2014 - Août 2017",
     location: "Paris",
@@ -63,7 +105,7 @@ export const dataExperiences = [
     ]
   },
   {
-    id: 3,
+    id: 5,
     title: "Stagiaire en Marketing",
     date: "Mai 2009",
     location: "Porte de Saint-Cloud, Paris ",

@@ -7,7 +7,7 @@ const Skill = ({ id, name, language, icon }) => {
     <h3 className="font-bold text-lg mb-4 text-[#4B0082]">{name}</h3>
     <ul className="flex flex-wrap">
       {language.map((skill, index) => (
-        <li key={index} className="flex items-center mb-2 w-1/2">
+        <li key={index} className="flex items-center mb-3 w-1/2">
           {icon[index] && (
             <img src={icon[index]} alt={skill} className="mr-2 h-8 w-8" />
           )}

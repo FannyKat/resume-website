@@ -2,6 +2,8 @@ import cv from "../assets/fcatusse-cv.pdf";
 import picture from "../assets/cvpic.JPG";
 
 export default function Profil() {
+  const getAge = birthDate => Math.floor((new Date() - new Date(birthDate).getTime()) / 3.15576e+10)
+
   return (
     <div className="flex justify-center items-center p-20">
       <div className="md:pr-40 md:text-left lg:w-1/2 md:w-4/3">
@@ -15,7 +17,7 @@ export default function Profil() {
             </p>
             <br />
             <p className="">
-              27 ans, Paris
+              {getAge('1996-02-23')} ans, Paris
               <br />
               fannykatusse@gmail.com
             </p>

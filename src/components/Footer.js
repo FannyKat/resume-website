@@ -1,9 +1,11 @@
 import React from 'react'
 
 function Footer() {
+  const today = new Date()
+  
   return (
     <footer className="p-2 flex items-end justify-end">
-     &copy; 2023 Fanny Catusse
+     &copy; {today.getFullYear()} Fanny Catusse
     </footer>
   )
 }
