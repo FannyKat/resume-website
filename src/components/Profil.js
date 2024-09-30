@@ -6,9 +6,9 @@ export default function Profil() {
 
   return (
     <div className="flex justify-center items-center p-20">
-      <div className="md:pr-40 md:text-left lg:w-1/2 md:w-4/3">
+      <div className="md:pr-20 md:text-left 2xl:w-1/2 md:w-4/3">
         <div className="flex flex-wrap justify-center">
-          <img src={picture} className="w-42 h-48 rounded-full mr-6 mt-6"/>
+          <img src={picture} alt="Profil" className="w-42 h-48 rounded-full mr-6 mt-6"/>
           <h1 className="text-left lg:text-md text-sm m-5 tracking-wider">
             <p className="text-center font-bold text-5xl pb-2">Fanny Catusse</p>
             <br />
@@ -24,8 +24,8 @@ export default function Profil() {
             <div className="flex flex-row mt-5">
               <a
                 href="https://www.linkedin.com/in/fannycatusse/"
-                target="_blank"
                 className="text-[#CAD7D8] hover:text-[#FF6F61] mr-4"
+                target="_blank"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -41,8 +41,8 @@ export default function Profil() {
               </a>
               <a
                 href="https://github.com/fannykat"
-                target="_blank"
                 className="text-[#CAD7D8] hover:text-[#FF6F61]"
+                target="_blank"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -60,16 +60,16 @@ export default function Profil() {
           </h1>
         </div>
         <p className="mt-8 md:mt-6 md:text-lg text-sm">
-          Actuellement à la recherche d'un poste en tant que développeuse Web Fullstack.
-          Mon intérêt est de trouver une entreprise utilisant les langages qui me correspondent. 
-          Cependant je me donnerai à coeur joie pour découvrir et apprendre de nouvelles technologies.
+          Passionnée par Ruby On Rails mon intérêt est de trouver une entreprise innovante où je pourrais mettre en pratique mes compétences, 
+          mais aussi explorer de nouvelles technologies. Je suis également en quête d'une équipe dynamique et motivée avec laquelle je pourrais 
+          collaborer et m'épanouir.
+         
         </p>
-        <p className="mt-8 md:mt-6 md:text-lg text-sm">N'hésitez pas à me contacer par mail.</p>
-        <div className="flex md:justify-start items-center mx-auto mt-8 md:mt-6 lg:text-md text-sm">
+        <p className="mt-8 md:mt-6 md:text-lg text-sm">N'hésitez pas à me contacter par mail.</p>
+        <div className="flex md:justify-start sm:justify-center items-center mx-auto mt-8 md:mt-6 lg:text-md text-sm">
           <a
             href={cv}
-            target="_blank"
-            className="rounded-md text-center p-4 lg:p-6 bg-[#FF6F61] text-[#FFF] font-bold hover:bg-[#FF8278] w-1/2"
+            className="rounded-md text-center p-4 lg:p-6 bg-[#FF6F61] text-[#FFF] font-bold hover:bg-[#FF8278] md:w-1/2 sm:w-full"
           >
             Download CV
           </a>

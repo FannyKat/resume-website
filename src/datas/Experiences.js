@@ -2,7 +2,7 @@ export const dataExperiences = [
   {
     id: 0,
     title: "Développeuse  Web - Fullstack",
-    date: "Janvier 2024 - Mai 2024",
+    date: "Janvier 2024 - Juillet 2024",
     location: "Ledonenligne - Paris",
     text: "Mise à jour d'un site web RubyOnRails",
     missions: [
@@ -14,6 +14,10 @@ export const dataExperiences = [
         id: 1,
         title: "Assuré la maintenance continue du site, comprenant la correction des bugs et l'ajout de nouvelles fonctionnalités pour améliorer l'expérience utilisateur et répondre aux besoins évolutifs de l'entreprise.",
       },
+      {
+        id: 2,
+        title: "DevOps: Utilisation de Capistrano pour automatiser le déploiement sur un serveur Puma et Nginx."
+      }
     ]
   },
   {
@@ -85,27 +89,6 @@ export const dataExperiences = [
   },
   {
     id: 4,
-    title: "Equipière polyvalente en restauration",
-    date: "Septembre 2014 - Août 2017",
-    location: "Paris",
-    text: "Accueil de la clientèle, service à table, gestion de la caisse, cuisine et pâtisserie",
-    missions: [
-      {
-        id: 0,
-        title: "Sandwicherie Picto",
-      },
-      {
-        id: 2,
-        title: "Bioburger",
-      },
-      {
-        id: 3,
-        title: "Intérim",
-      },
-    ]
-  },
-  {
-    id: 5,
     title: "Stagiaire en Marketing",
     date: "Mai 2009",
     location: "Porte de Saint-Cloud, Paris ",

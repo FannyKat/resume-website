@@ -2,6 +2,7 @@ import amazonwebservices from "./amazonwebservices.svg";
 import apple from "./apple.svg";
 import bash from "./bash.svg";
 import bootstrap from "./bootstrap.svg";
+import bulma from "./bulma.png";
 import c from "./c.svg";
 import css3 from "./css3.svg";
 import docker from "./docker.svg";
@@ -47,6 +48,7 @@ export {
   bootstrap,
   c,
   css3,
+  bulma,
   docker,
   express,
   git,

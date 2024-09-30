@@ -12,7 +12,7 @@ function Portfolio({ datas }) {
         {datas.map(( item, index ) => (
           <li key={index}>
             <div className="bg-[#D8BFD8] rounded-md w-full w-2/3 shadow-lg h-full hover:opacity-75 cursor-pointer">
-              <a href={item.url} className="">
+              <a href={item.url} className="" target="_blank">
                 <img src={item.image} alt={item.description} className="w-full rounded-t-md" />
               </a>
               <div className="md:text-left p-3 rounded-b-md font-bold text-lg text-[#4B0082] text-center">{item.description}</div>

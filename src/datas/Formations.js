@@ -4,14 +4,14 @@ const dataFormations = [
     title: "BAFA - Brevet d'aptitude aux fonctions d'animateur",
     date: "Février 2022 - Novembre 2022",
     location: "Paris",
-    text: "Spécialité: Accueil d'enfants en situation de handicap. Projet: Le chien d'accompagnement en milieu scolaire."
+    text: "Accueil d'enfants en situation de handicap."
   },
   {
     id: 1,
     title: "Ecole 42 Paris - Formation Architecte de programmation",
     date: "Septembre 2018 - 2022",
     location: "Paris 17ème",
-    text: "Pédagogie par projets, apprentissage de langages bas niveaux et hauts niveaux"
+    text: "Programmation C, PHP, HTML, CSS. Réalisation d'un Shell UNIX interactif"
   },
   {
     id: 2,
