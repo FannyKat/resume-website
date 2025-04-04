@@ -1,5 +1,5 @@
-import cv from "../assets/fcatusse-cv.pdf";
-import picture from "../assets/cvpic.JPG";
+import cv from "../assets/FANNYCATUSSE-CV.pdf";
+import picture from "../assets/cv-pic.png";
 
 export default function Profil() {
   const getAge = birthDate => Math.floor((new Date() - new Date(birthDate).getTime()) / 3.15576e+10)
@@ -60,8 +60,8 @@ export default function Profil() {
           </h1>
         </div>
         <p className="mt-8 md:mt-6 md:text-lg text-sm">
-          Passionnée par Ruby On Rails mon intérêt est de trouver une entreprise innovante où je pourrais mettre en pratique mes compétences, 
-          mais aussi explorer de nouvelles technologies. Je suis également en quête d'une équipe dynamique et motivée avec laquelle je pourrais 
+          Passionnée par Ruby On Rails mon intérêt est de trouver une entreprise innovante où je pourrais mettre en pratique mes compétences,
+          mais aussi explorer de nouvelles technologies. Je suis également en quête d'une équipe dynamique et motivée avec laquelle je pourrais
           collaborer et m'épanouir.
          
         </p>

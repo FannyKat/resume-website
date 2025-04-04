@@ -18,16 +18,16 @@ import {
 const dataPortfolio = [
   {
     id: 0,
-    url: 'https://skate.rumahtaipei.com',
-    image: "./rumah-site.png",
-    description: "Registration for Rumah Skate Club",
+    url: 'https://rumahtaipei.com',
+    image: "./Rumah-Logo-Original.png",
+    description: "Website for RUMAH social space in TAIPEI",
     icon: [ruby, rails, bulma, javascript, postgresql]
   },
   {
     id: 1,
     url: 'https://www.ledonenligne.fr',
     image: "./ldl.png",
-    description: "Online Donations Website",
+    description: "Ledonenligne.fr - online donations",
     icon: [ruby, rails, materialize, javascript, postgresql]
   },
   {
